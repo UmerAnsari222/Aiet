@@ -114,7 +114,7 @@ const RegisterScreen = () => {
               </PrimaryButton>
             </View>
 
-            <View
+            {/* <View
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -137,7 +137,7 @@ const RegisterScreen = () => {
                 style={[styles.socialBtn, {backgroundColor: '#1877F2'}]}>
                 <Text style={styles.googleBtnText}>Continue with Facebook</Text>
               </TouchableOpacity>
-            </View>
+            </View> */}
           </View>
 
           <View style={styles.dontHaveAccountWrapper}>

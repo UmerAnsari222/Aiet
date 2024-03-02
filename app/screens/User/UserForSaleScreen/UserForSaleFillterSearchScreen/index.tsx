@@ -67,10 +67,34 @@ const UserForSaleFillterSearchScreen = () => {
 
           <View style={{marginVertical: heightPercentageToDP('3')}}>
             <ScrollView showsVerticalScrollIndicator={false}>
-              <PropertyCard />
-              <PropertyCard />
-              <PropertyCard />
-              <PropertyCard />
+              <PropertyCard
+                onPress={() =>
+                  navigation.navigate('PropertyDetailScreen', {
+                    id: '63862836486284',
+                  })
+                }
+              />
+              <PropertyCard
+                onPress={() =>
+                  navigation.navigate('PropertyDetailScreen', {
+                    id: '63862836486284',
+                  })
+                }
+              />
+              <PropertyCard
+                onPress={() =>
+                  navigation.navigate('PropertyDetailScreen', {
+                    id: '63862836486284',
+                  })
+                }
+              />
+              <PropertyCard
+                onPress={() =>
+                  navigation.navigate('PropertyDetailScreen', {
+                    id: '63862836486284',
+                  })
+                }
+              />
             </ScrollView>
           </View>
         </View>

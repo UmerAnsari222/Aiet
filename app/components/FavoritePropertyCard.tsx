@@ -11,19 +11,11 @@ import {
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
 import {Font_BOLD} from '../themes/typogrphy';
-import {Heart, Property, StarYellow} from '../../assets/icons/icons';
+import {Heart, HeartRead, Property, StarYellow} from '../../assets/icons/icons';
 
-const PropertyCard = ({onPress}: {onPress: () => void}) => {
+const FavoritePropertyCard = ({onPress}: {onPress: () => void}) => {
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={{
-        backgroundColor: '#FFFFFF',
-        borderRadius: 14,
-        paddingHorizontal: widthPercentageToDP('3'),
-        paddingVertical: widthPercentageToDP('3'),
-        marginVertical: heightPercentageToDP('0.7'),
-      }}>
+    <TouchableOpacity onPress={onPress} style={styles.wrapper}>
       <View>
         <ImageBackground
           source={Property}
@@ -66,7 +58,7 @@ const PropertyCard = ({onPress}: {onPress: () => void}) => {
           }}>
           Awabi Villas
         </Text>
-        <Heart />
+        <HeartRead />
       </View>
 
       <View>
@@ -109,6 +101,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 15,
   },
+  wrapper: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 14,
+    paddingHorizontal: widthPercentageToDP('3'),
+    paddingVertical: widthPercentageToDP('3'),
+    marginVertical: heightPercentageToDP('0.7'),
+  },
 });
 
-export default PropertyCard;
+export default FavoritePropertyCard;

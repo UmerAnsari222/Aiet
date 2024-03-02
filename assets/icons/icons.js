@@ -53,6 +53,27 @@ import Image7 from './image7.png';
 import Search from './Search.svg';
 import Filter from './Filter.svg';
 import IconoirArrow from './iconoir_arrow-tl.svg';
+import Appartment from './appartment.png';
+import HeartBlack from './heartBlack.svg';
+import SmArrow from './SmArrow.svg';
+import YellowStar from './yellow-star.svg';
+import SolarBath from './solar_bath-bold.svg';
+import SolidBed from './fa6-solid_bed.svg';
+import Frame from './Frame33896.svg';
+import Imagegell from './imagegell.png';
+import EditPen from './edit.svg';
+import Call from './Call.svg';
+import ShieldDone from './ShieldDone.svg';
+import LgStar from './LgStar.svg';
+import Work from './Work.svg';
+import StarBlack from './starBlack.svg';
+import Girl2 from './girl2.png';
+import SendIcon from './Send.svg';
+import CameraOrang from './CameraOrang.svg';
+import AdditionalIcons from './AdditionalIcons.svg';
+import Emoji from './emoji.svg';
+import AutoLayoutHorizontal from './AutoLayoutHorizontal.svg';
+import Unsplash from './unsplash_pAtA8xe_iVM.png';
 
 export {
   Logo,
@@ -110,4 +131,25 @@ export {
   Search,
   Filter,
   IconoirArrow,
+  Appartment,
+  HeartBlack,
+  SmArrow,
+  YellowStar,
+  SolarBath,
+  SolidBed,
+  Frame,
+  Imagegell,
+  EditPen,
+  Call,
+  ShieldDone,
+  LgStar,
+  Work,
+  StarBlack,
+  Girl2,
+  SendIcon,
+  AdditionalIcons,
+  Emoji,
+  CameraOrang,
+  AutoLayoutHorizontal,
+  Unsplash,
 };

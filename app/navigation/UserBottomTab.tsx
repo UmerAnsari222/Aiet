@@ -17,6 +17,7 @@ import CompanyStatScreen from '../screens/Company/CompanyStatScreen';
 import CompanyAddEmployeeScreen from '../screens/Company/CompanyAddEmployeeScreen';
 import CompanySettingScreen from '../screens/Company/CompanySettingScreen';
 import UserHomeScreen from '../screens/User/UserHomeScreen';
+import Working from '../components/Working';
 
 const Tab = createBottomTabNavigator();
 
@@ -82,7 +83,7 @@ export default function UserBottomTab() {
           },
         }}
         name="UserCalendarScreen"
-        component={CompanyProfileScreen}
+        component={Working}
       />
       <Tab.Screen
         options={{
@@ -94,7 +95,7 @@ export default function UserBottomTab() {
           },
         }}
         name="UserCreateAddScreen"
-        component={CompanyProfileScreen}
+        component={Working}
       />
       <Tab.Screen
         options={{
@@ -106,7 +107,7 @@ export default function UserBottomTab() {
           },
         }}
         name="UserChatsScreen"
-        component={CompanyProfileScreen}
+        component={Working}
       />
       <Tab.Screen
         options={{
@@ -118,7 +119,7 @@ export default function UserBottomTab() {
           },
         }}
         name="UserProfileScreen"
-        component={CompanyProfileScreen}
+        component={Working}
       />
     </Tab.Navigator>
   );

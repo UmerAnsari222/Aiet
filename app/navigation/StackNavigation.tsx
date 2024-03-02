@@ -26,6 +26,10 @@ import UserForRentSearchScreen from '../screens/User/UserForRentScreen/UserForRe
 import UserForRentPopularScreen from '../screens/User/UserForRentScreen/UserForRentPopularScreen';
 import UserForRentFillterScreen from '../screens/User/UserForRentScreen/UserForRentFillterScreen';
 import UserForRentFillterSearchScreen from '../screens/User/UserForRentScreen/UserForRentFillterSearchScreen';
+import FavoritesScreen from '../screens/FavoritesScreen';
+import PropertyDetailScreen from '../screens/PropertyDetailScreen/PropertyDetailScreen';
+import OwnerDetailScreen from '../screens/OwnerDetailScreen';
+import ChatScreen from '../screens/ChatScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -109,6 +113,13 @@ const StackNavigation = () => {
           name="UserForRentFillterSearchScreen"
           component={UserForRentFillterSearchScreen}
         />
+        <Stack.Screen name="FavoritesScreen" component={FavoritesScreen} />
+        <Stack.Screen
+          name="PropertyDetailScreen"
+          component={PropertyDetailScreen}
+        />
+        <Stack.Screen name="OwnerDetailScreen" component={OwnerDetailScreen} />
+        <Stack.Screen name="ChatScreen" component={ChatScreen} />
       </Stack.Group>
 
       <Stack.Group>

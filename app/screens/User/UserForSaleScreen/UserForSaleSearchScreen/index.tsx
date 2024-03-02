@@ -101,7 +101,14 @@ const UserForSaleSearchScreen = () => {
           <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.propertySearchWrapper}>
               {[0, 1, 2, 4, 5, 6].map(i => (
-                <SmPropertyCard key={i} />
+                <SmPropertyCard
+                  onPress={() =>
+                    navigation.navigate('PropertyDetailScreen', {
+                      id: '63862836486284',
+                    })
+                  }
+                  key={i}
+                />
               ))}
             </View>
           </ScrollView>

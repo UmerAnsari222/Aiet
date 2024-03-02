@@ -2,22 +2,21 @@ import {
   View,
   Text,
   SafeAreaView,
-  ScrollView,
   TouchableOpacity,
-  TextInput,
+  ScrollView,
 } from 'react-native';
 import React from 'react';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
-import {Filter, LeftArrow, Search} from '../../../../assets/icons/icons';
-import {Font_REGULAR} from '../../../themes/typogrphy';
 import {useNavigation} from '@react-navigation/native';
-import {styles} from './style';
-import PropertyCard from '../../../components/PropertyCard';
+import {LeftArrow, Search} from '../../../assets/icons/icons';
+import {Font_REGULAR} from '../../themes/typogrphy';
+import PropertyCard from '../../components/PropertyCard';
+import FavoritePropertyCard from '../../components/FavoritePropertyCard';
 
-const UserForSaleScreen = () => {
+const FavoritesScreen = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -39,57 +38,28 @@ const UserForSaleScreen = () => {
               color: '#000000D9',
               fontFamily: Font_REGULAR,
             }}>
-            For Sale
+            Favorites
           </Text>
         </View>
 
-        <View style={styles.inputWrapper}>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('UserForSaleSearchScreen')}
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              flex: 1,
-              gap: 4,
-            }}>
-            <Search />
-            <Text style={{color: '#E3851E'}}>Search</Text>
-            {/* <TextInput
-              style={{color: '#E3851E'}}
-              keyboardType="default"
-              placeholder="Search"
-              placeholderTextColor={'#E3851E'}
-            /> */}
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('UserForSaleFillterScreen')}>
-            <Filter />
-          </TouchableOpacity>
-        </View>
-
-        <ScrollView showsVerticalScrollIndicator={false}>
-          <PropertyCard
+        <ScrollView
+          style={{marginTop: heightPercentageToDP('4')}}
+          showsVerticalScrollIndicator={false}>
+          <FavoritePropertyCard
             onPress={() =>
               navigation.navigate('PropertyDetailScreen', {
                 id: '63862836486284',
               })
             }
           />
-          <PropertyCard
+          <FavoritePropertyCard
             onPress={() =>
               navigation.navigate('PropertyDetailScreen', {
                 id: '63862836486284',
               })
             }
           />
-          <PropertyCard
-            onPress={() =>
-              navigation.navigate('PropertyDetailScreen', {
-                id: '63862836486284',
-              })
-            }
-          />
-          <PropertyCard
+          <FavoritePropertyCard
             onPress={() =>
               navigation.navigate('PropertyDetailScreen', {
                 id: '63862836486284',
@@ -102,4 +72,4 @@ const UserForSaleScreen = () => {
   );
 };
 
-export default UserForSaleScreen;
+export default FavoritesScreen;

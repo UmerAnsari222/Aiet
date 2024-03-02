@@ -58,7 +58,9 @@ const UserHomeScreen = () => {
                 </Text>
               </View>
               <View style={{flexDirection: 'row', gap: 5}}>
-                <TouchableOpacity style={styles.circleBg}>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('FavoritesScreen')}
+                  style={styles.circleBg}>
                   <HeartRead />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.circleBg}>

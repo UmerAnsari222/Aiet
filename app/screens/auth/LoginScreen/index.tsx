@@ -94,7 +94,7 @@ const LoginScreen = () => {
               </PrimaryButton>
             </View>
 
-            <View
+            {/* <View
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -117,7 +117,7 @@ const LoginScreen = () => {
                 style={[styles.socialBtn, {backgroundColor: '#1877F2'}]}>
                 <Text style={styles.googleBtnText}>Continue with Facebook</Text>
               </TouchableOpacity>
-            </View>
+            </View> */}
           </View>
 
           <View style={styles.dontHaveAccountWrapper}>

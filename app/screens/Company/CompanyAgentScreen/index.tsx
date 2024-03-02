@@ -168,13 +168,25 @@ const CompanyAgentScreen = () => {
           <View style={{marginVertical: heightPercentageToDP('3')}}>
             <Text style={styles.propertyCardTypeText}>To Sell</Text>
 
-            <PropertyCard />
+            <PropertyCard
+              onPress={() =>
+                navigation.navigate('PropertyDetailScreen', {
+                  id: '63862836486284',
+                })
+              }
+            />
           </View>
 
           <View style={{marginVertical: heightPercentageToDP('3')}}>
             <Text style={styles.propertyCardTypeText}>Sold</Text>
 
-            <PropertyCard />
+            <PropertyCard
+              onPress={() =>
+                navigation.navigate('PropertyDetailScreen', {
+                  id: '63862836486284',
+                })
+              }
+            />
           </View>
         </View>
       </ScrollView>

@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 import {Font_BLACK, Font_REGULAR} from '../../themes/typogrphy';
 import {
   heightPercentageToDP as hp,
+  widthPercentageToDP,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
 
@@ -14,6 +15,15 @@ export const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: '700',
     marginVertical: hp('15'),
+  },
+  sheet: {
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    borderColor: '#130F26',
+    borderWidth: 0.3,
+    width: widthPercentageToDP('100'),
+    position: 'absolute',
+    bottom: 0,
   },
   bottomSheetHeading: {
     color: '#000000',

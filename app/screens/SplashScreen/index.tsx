@@ -5,7 +5,7 @@ import {styles} from './style';
 const SplashScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>AITE</Text>
+      <Text style={styles.heading}>AIET</Text>
     </View>
   );
 };

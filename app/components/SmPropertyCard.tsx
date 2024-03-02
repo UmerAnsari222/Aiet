@@ -1,4 +1,10 @@
-import {View, Text, ImageBackground, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  ImageBackground,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import {
   heightPercentageToDP,
@@ -7,9 +13,10 @@ import {
 import {Font_BOLD} from '../themes/typogrphy';
 import {Heart, Property, StarYellow} from '../../assets/icons/icons';
 
-const SmPropertyCard = () => {
+const SmPropertyCard = ({onPress}: {onPress: () => void}) => {
   return (
-    <View
+    <TouchableOpacity
+      onPress={onPress}
       style={{
         backgroundColor: '#FFFFFF',
         borderRadius: 14,
@@ -89,7 +96,7 @@ const SmPropertyCard = () => {
           $ 468,000
         </Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
