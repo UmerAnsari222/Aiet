@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#F5F5F5',
     borderRadius: 13,
     paddingHorizontal: widthPercentageToDP('4'),
-    paddingVertical: heightPercentageToDP('3'),
+    paddingVertical: heightPercentageToDP('2'),
     marginVertical: heightPercentageToDP('2'),
   },
   boxWrapperTransparent: {

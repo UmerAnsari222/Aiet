@@ -165,9 +165,9 @@ const UserHomeScreen = () => {
                 justifyContent: 'space-between',
               }}>
               <Text style={styles.benefitsText}>Benefits</Text>
-              <TouchableOpacity>
+              {/* <TouchableOpacity>
                 <Text style={styles.seeAll}>See All</Text>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
             </View>
 
             <View style={styles.boxWrapper}>

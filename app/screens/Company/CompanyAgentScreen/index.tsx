@@ -41,7 +41,7 @@ const CompanyAgentScreen = () => {
 
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
           style={{

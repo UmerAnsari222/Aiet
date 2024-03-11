@@ -4,6 +4,7 @@ import {
   ImageBackground,
   StyleSheet,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 import React from 'react';
 import {
@@ -107,6 +108,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: widthPercentageToDP('3'),
     paddingVertical: widthPercentageToDP('3'),
     marginVertical: heightPercentageToDP('0.7'),
+    marginHorizontal: heightPercentageToDP('0.7'),
+    ...Platform.select({
+      ios: {
+        shadowColor: '#F4EFEFF0',
+        shadowOffset: {width: 1, height: 1},
+        shadowOpacity: 1,
+        shadowRadius: 10.699999809265137,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
   },
 });
 

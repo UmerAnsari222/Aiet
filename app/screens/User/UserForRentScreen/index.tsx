@@ -20,7 +20,7 @@ import PropertyCard from '../../../components/PropertyCard';
 const UserForRentScreen = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <View
         style={{
           flex: 1,
@@ -45,7 +45,7 @@ const UserForRentScreen = () => {
 
         <View style={styles.inputWrapper}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('UserForSaleSearchScreen')}
+            onPress={() => navigation.navigate('UserForRentSearchScreen')}
             style={{
               flexDirection: 'row',
               alignItems: 'center',

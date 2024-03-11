@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 import {widthPercentageToDP} from 'react-native-responsive-screen';
 
 export const styles = StyleSheet.create({
@@ -14,6 +14,17 @@ export const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 12,
     backgroundColor: '#fff',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#F4EFEFF0',
+        shadowOffset: {width: 1, height: 1},
+        shadowOpacity: 1,
+        shadowRadius: 10.699999809265137,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
   },
   header: {
     padding: 10,

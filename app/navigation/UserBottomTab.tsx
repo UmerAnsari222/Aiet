@@ -46,9 +46,9 @@ export default function UserBottomTab() {
         },
         tabBarStyle: {
           backgroundColor: '#F6F6F6',
-          borderTopStartRadius: 20,
-          borderTopEndRadius: 20,
-          borderColor: '#D07D36',
+          // borderTopStartRadius: 20,
+          // borderTopEndRadius: 20,
+          borderTopColor: '#D07D36',
           borderWidth: 1.5,
           height:
             Platform.OS === 'ios'

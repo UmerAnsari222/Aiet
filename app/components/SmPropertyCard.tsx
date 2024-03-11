@@ -4,6 +4,7 @@ import {
   ImageBackground,
   StyleSheet,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 import React from 'react';
 import {
@@ -15,19 +16,7 @@ import {Heart, Property, StarYellow} from '../../assets/icons/icons';
 
 const SmPropertyCard = ({onPress}: {onPress: () => void}) => {
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={{
-        backgroundColor: '#FFFFFF',
-        borderRadius: 14,
-        paddingHorizontal: widthPercentageToDP('3'),
-        paddingVertical: widthPercentageToDP('3'),
-        marginVertical: heightPercentageToDP('0.7'),
-        width: widthPercentageToDP('43'),
-        // width: 160,
-        height: heightPercentageToDP('27'),
-        // height: 200,
-      }}>
+    <TouchableOpacity onPress={onPress} style={styles.card}>
       <View>
         <ImageBackground
           source={Property}
@@ -112,6 +101,27 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 15,
+  },
+  card: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 14,
+    paddingHorizontal: widthPercentageToDP('2.7'),
+    paddingVertical: widthPercentageToDP('3'),
+    marginVertical: heightPercentageToDP('0.7'),
+    marginHorizontal: heightPercentageToDP('0.3'),
+    width: widthPercentageToDP('43'),
+    height: heightPercentageToDP('27'),
+    ...Platform.select({
+      ios: {
+        shadowColor: '#F4EFEFF0',
+        shadowOffset: {width: 1, height: 1},
+        shadowOpacity: 1,
+        shadowRadius: 10.699999809265137,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
   },
 });
 

@@ -18,32 +18,13 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 
 const WelcomeScreen = () => {
-  const refRBSheet = useRef<MutableRefObject<ReactElement>>();
-
-  const navigation = useNavigation();
-
-  useFocusEffect(
-    React.useCallback(() => {
-      console.log('RECALLING');
-      refRBSheet?.current?.open();
-    }, []),
-  );
-
-  useEffect(() => {
-    refRBSheet?.current?.open();
-  }, []);
+  const navigation = useNavigation<any>();
 
   function handelCompanyNavigation() {
-    refRBSheet?.current?.close();
-    setTimeout(() => {
-      navigation.navigate('ChooseCompanyScreen');
-    }, 100);
+    navigation.navigate('ChooseCompanyScreen', {type: 'Company'});
   }
   function handelUserNavigation() {
-    refRBSheet?.current?.close();
-    setTimeout(() => {
-      navigation.navigate('UserBottomTab');
-    }, 100);
+    navigation.navigate('LoginScreen', {type: 'User'});
   }
 
   return (

@@ -17,7 +17,7 @@ import {Font_MEDIUM, Font_REGULAR} from '../../../themes/typogrphy';
 const CompanyAboutUsScreen = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
           style={{

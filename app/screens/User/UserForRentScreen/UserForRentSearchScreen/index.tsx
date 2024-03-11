@@ -28,9 +28,9 @@ import PropertyCard from '../../../../components/PropertyCard';
 import SmPropertyCard from '../../../../components/SmPropertyCard';
 
 const UserForRentSearchScreen = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <View
         style={{
           flex: 1,
@@ -70,7 +70,7 @@ const UserForRentSearchScreen = () => {
           <View style={{marginVertical: heightPercentageToDP('3')}}>
             <TouchableOpacity
               onPress={() =>
-                navigation.navigate('UserForSalePopularScreen', {
+                navigation.navigate('UserForRentPopularScreen', {
                   search: 'house',
                 })
               }
@@ -100,7 +100,7 @@ const UserForRentSearchScreen = () => {
 
           <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.propertySearchWrapper}>
-              {[0, 1, 2, 4, 5, 6].map(i => (
+              {[0, 1, 2, 4, 5, 6, 7, 8, 9].map(i => (
                 <SmPropertyCard
                   onPress={() =>
                     navigation.navigate('PropertyDetailScreen', {

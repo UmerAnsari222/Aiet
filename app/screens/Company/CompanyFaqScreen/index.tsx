@@ -49,7 +49,7 @@ const Accordion = ({title, content}) => {
 const CompanyFaqScreen = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
           style={{

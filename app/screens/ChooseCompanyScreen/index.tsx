@@ -22,7 +22,9 @@ const ChooseCompanyScreen = () => {
             <Text style={styles.buttonText}>Appraiser</Text>
           </ChooseCompanyButton>
           <ChooseCompanyButton
-            onPress={() => navigation.navigate('LoginScreen')}>
+            onPress={() =>
+              navigation.navigate('LoginScreen', {type: 'Company'})
+            }>
             <Text style={styles.buttonText}>Real Estate Broker</Text>
           </ChooseCompanyButton>
           <ChooseCompanyButton onPress={() => {}}>

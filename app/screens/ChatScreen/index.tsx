@@ -32,6 +32,8 @@ import {
 import {Font_REGULAR} from '../../themes/typogrphy';
 import {useNavigation} from '@react-navigation/native';
 
+import Video from 'react-native-video';
+
 const CustomInputToolbar = ({text, onChangeText}) => {
   console.log(text);
   console.log(onChangeText);
@@ -141,6 +143,24 @@ const ChatScreen = () => {
     );
   };
 
+  const renderMessageVideo = (props: any) => {
+    // console.log(props);
+
+    const {currentMessage} = props;
+    console.log(currentMessage);
+
+    return (
+      <View style={{height: 200, width: 200}}>
+        <Video
+          style={{width: '100%', height: '100%', borderRadius: 4}}
+          controls={true}
+          resizeMode="cover"
+          source={{uri: currentMessage?.video}}
+        />
+      </View>
+    );
+  };
+
   return (
     <SafeAreaView style={{flex: 1, paddingVertical: heightPercentageToDP('2')}}>
       <View
@@ -163,7 +183,7 @@ const ChatScreen = () => {
             color: '#000000D9',
             fontFamily: Font_REGULAR,
           }}>
-          For Sale
+          Alex Hales
         </Text>
       </View>
 
@@ -185,6 +205,7 @@ const ChatScreen = () => {
             }}
           />
         )}
+        renderMessageVideo={props => renderMessageVideo(props)}
       />
     </SafeAreaView>
   );
@@ -194,15 +215,16 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-
     paddingHorizontal: 10,
     gap: 4,
+    position: 'absolute',
+    bottom: -10,
   },
   textInput: {
     flex: 1,
-    borderRadius: 16,
     paddingHorizontal: 12,
     fontSize: 16,
+    color: '#FFF',
   },
   inputWrapper: {
     flex: 1,

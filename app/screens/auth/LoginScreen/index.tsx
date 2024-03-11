@@ -17,7 +17,7 @@ import PrimaryInput from '../../../components/PrimaryInput';
 import PasswordInput from '../../../components/PasswordInput';
 import {Font_BLACK, Font_BOLD} from '../../../themes/typogrphy';
 import LinearGradient from 'react-native-linear-gradient';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 import PrimaryButton from '../../../components/PrimaryButton';
 
 const LoginScreen = () => {
@@ -25,12 +25,25 @@ const LoginScreen = () => {
   const [password, setPassword] = useState('');
   const [isSecure, setIsSecure] = useState(true);
 
+  const route = useRoute();
   const navigation = useNavigation();
+
+  const {type} = route?.params;
+
+  console.log('TYPE ', type);
 
   function handelPassword() {
     setIsSecure(prev => {
       return !prev;
     });
+  }
+
+  function handelSubmit() {
+    if (type === 'User') {
+      navigation.navigate('UserBottomTab');
+    } else if (type === 'Company') {
+      navigation.navigate('CompanyBottomTab');
+    }
   }
 
   return (
@@ -88,8 +101,7 @@ const LoginScreen = () => {
             </View>
 
             <View style={{marginVertical: heightPercentageToDP('4')}}>
-              <PrimaryButton
-                onPress={() => navigation.navigate('CompanyBottomTab')}>
+              <PrimaryButton onPress={handelSubmit}>
                 <Text style={styles.signInText}>Sign In</Text>
               </PrimaryButton>
             </View>

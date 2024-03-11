@@ -19,7 +19,7 @@ import FavoritePropertyCard from '../../components/FavoritePropertyCard';
 const FavoritesScreen = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <View
         style={{
           flex: 1,

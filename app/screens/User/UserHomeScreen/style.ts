@@ -23,8 +23,8 @@ export const styles = StyleSheet.create({
   },
   benefitsText: {
     fontSize: 16,
-    fontWeight: '600',
-    fontFamily: Font_REGULAR,
+    fontWeight: '700',
+    fontFamily: Font_BOLD,
     color: '#000000',
     lineHeight: 22,
   },
@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#F5F5F5',
     borderRadius: 13,
     paddingHorizontal: widthPercentageToDP('4'),
-    paddingVertical: heightPercentageToDP('3'),
+    paddingVertical: heightPercentageToDP('2'),
     marginVertical: heightPercentageToDP('2'),
   },
   priceText: {
