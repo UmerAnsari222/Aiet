@@ -24,7 +24,7 @@ const WelcomeScreen = () => {
     navigation.navigate('ChooseCompanyScreen', {type: 'Company'});
   }
   function handelUserNavigation() {
-    navigation.navigate('LoginScreen', {type: 'User'});
+    navigation.navigate('RegisterScreen', {type: 'User'});
   }
 
   return (

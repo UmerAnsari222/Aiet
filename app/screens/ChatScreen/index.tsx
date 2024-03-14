@@ -198,9 +198,11 @@ const ChatScreen = () => {
             wrapperStyle={{
               left: {
                 backgroundColor: '#E9E9E9E5',
+                marginBottom: heightPercentageToDP('1.4'),
               },
               right: {
                 backgroundColor: '#B86015',
+                marginBottom: heightPercentageToDP('1'),
               },
             }}
           />

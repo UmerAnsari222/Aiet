@@ -1,6 +1,6 @@
 import {View, Text, ScrollView, TouchableOpacity, Image} from 'react-native';
 import React, {useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 import {styles} from './style';
 import {
   Hide,
@@ -29,6 +29,8 @@ const RegisterScreen = () => {
   const [isConfirmSecure, setIsConfirmSecure] = useState(true);
 
   const navigation = useNavigation();
+  const route = useRoute();
+  const {type} = route?.params;
 
   function handelPassword() {
     setIsSecure(prev => {
@@ -143,7 +145,7 @@ const RegisterScreen = () => {
           <View style={styles.dontHaveAccountWrapper}>
             <Text style={styles.dontHaveAccount}>Already have an Account?</Text>
             <TouchableOpacity
-              onPress={() => navigation.navigate('LoginScreen')}>
+              onPress={() => navigation.navigate('LoginScreen', {type: type})}>
               <Text style={[styles.dontHaveAccount, {color: '#E3851E'}]}>
                 Sign In
               </Text>

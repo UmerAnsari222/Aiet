@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: heightPercentageToDP('2'),
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: heightPercentageToDP('2'),
+    marginVertical: heightPercentageToDP('1.2'),
   },
   signInText: {
     color: '#fff',

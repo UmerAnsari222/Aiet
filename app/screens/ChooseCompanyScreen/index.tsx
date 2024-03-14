@@ -23,7 +23,7 @@ const ChooseCompanyScreen = () => {
           </ChooseCompanyButton>
           <ChooseCompanyButton
             onPress={() =>
-              navigation.navigate('LoginScreen', {type: 'Company'})
+              navigation.navigate('RegisterScreen', {type: 'Company'})
             }>
             <Text style={styles.buttonText}>Real Estate Broker</Text>
           </ChooseCompanyButton>

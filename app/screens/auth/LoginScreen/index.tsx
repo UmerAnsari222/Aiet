@@ -135,7 +135,9 @@ const LoginScreen = () => {
           <View style={styles.dontHaveAccountWrapper}>
             <Text style={styles.dontHaveAccount}>Don’t have an account?</Text>
             <TouchableOpacity
-              onPress={() => navigation.navigate('RegisterScreen')}>
+              onPress={() =>
+                navigation.navigate('RegisterScreen', {type: type})
+              }>
               <Text style={[styles.dontHaveAccount, {color: '#E3851E'}]}>
                 Sign up
               </Text>
