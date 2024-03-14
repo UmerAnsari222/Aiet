@@ -1,5 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {Font_BOLD, Font_REGULAR, Font_THIN} from '../../../themes/typogrphy';
+import {
+  Font_BOLD,
+  Font_REGULAR,
+  Font_SURANNA,
+  Font_THIN,
+} from '../../../themes/typogrphy';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
@@ -10,8 +15,8 @@ export const styles = StyleSheet.create({
     color: '#000',
     fontSize: 20,
     lineHeight: 26,
-    fontFamily: Font_THIN,
-    fontWeight: '800',
+    fontFamily: Font_SURANNA,
+    fontWeight: '400',
   },
   circleBg: {
     backgroundColor: '#FFF3F3',
@@ -77,5 +82,13 @@ export const styles = StyleSheet.create({
     color: '#000000',
     fontFamily: Font_THIN,
     marginTop: heightPercentageToDP('1'),
+  },
+  proposeCardText: {
+    fontSize: 15,
+    color: '#000000',
+    lineHeight: 21,
+    fontWeight: '600',
+    marginTop: 3,
+    textAlign: 'center',
   },
 });

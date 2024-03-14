@@ -18,6 +18,7 @@ import CompanyAddEmployeeScreen from '../screens/Company/CompanyAddEmployeeScree
 import CompanySettingScreen from '../screens/Company/CompanySettingScreen';
 import UserHomeScreen from '../screens/User/UserHomeScreen';
 import Working from '../components/Working';
+import UserChatsScreen from '../screens/User/ChatsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -107,7 +108,7 @@ export default function UserBottomTab() {
           },
         }}
         name="UserChatsScreen"
-        component={Working}
+        component={UserChatsScreen}
       />
       <Tab.Screen
         options={{

@@ -30,6 +30,7 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 import PropertyDetailScreen from '../screens/PropertyDetailScreen/PropertyDetailScreen';
 import OwnerDetailScreen from '../screens/OwnerDetailScreen';
 import ChatScreen from '../screens/ChatScreen';
+import ClientChatScreen from '../screens/User/ChatsScreen/ClientChatScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -120,6 +121,7 @@ const StackNavigation = () => {
         />
         <Stack.Screen name="OwnerDetailScreen" component={OwnerDetailScreen} />
         <Stack.Screen name="ChatScreen" component={ChatScreen} />
+        <Stack.Screen name="ClientChatScreen" component={ClientChatScreen} />
       </Stack.Group>
 
       <Stack.Group>

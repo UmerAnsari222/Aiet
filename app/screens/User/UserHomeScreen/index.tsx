@@ -21,6 +21,10 @@ import {
 } from '../../../themes/typogrphy';
 import {styles} from './style';
 import {
+  CreateGroupIcon,
+  ForRentIcon,
+  ForRequestIcon,
+  ForSaleIcon,
   HeartRead,
   Image6,
   Image7,
@@ -52,9 +56,9 @@ const UserHomeScreen = () => {
               }}>
               <View
                 style={{flexDirection: 'row', alignItems: 'center', gap: 5}}>
-                <Text style={styles.greeting}>Hey,</Text>
+                {/* <Text style={styles.greeting}>Hey,</Text> */}
                 <Text style={[styles.greeting, {color: '#E3851E'}]}>
-                  Jonathan!
+                  AIET.NO
                 </Text>
               </View>
               <View style={{flexDirection: 'row', gap: 5}}>
@@ -68,9 +72,9 @@ const UserHomeScreen = () => {
                 </TouchableOpacity>
               </View>
             </View>
-            <Text style={{color: '#000000', fontSize: 20, fontWeight: '600'}}>
+            {/* <Text style={{color: '#000000', fontSize: 20, fontWeight: '600'}}>
               Let's start exploring{' '}
-            </Text>
+            </Text> */}
           </View>
 
           <View
@@ -83,77 +87,37 @@ const UserHomeScreen = () => {
             }}>
             <PerposeCard
               onPress={() => navigation.navigate('UserForSaleScreen')}
-              Bg="#FFE9D0"
-              Img={Image96}
+              Bg="#F3F3F3"
+              Img={ForSaleIcon}
               name="For Sale"
               textColor="#E3851E">
-              <Text
-                style={{
-                  fontSize: 15,
-                  color: '#E3851E',
-                  lineHeight: 21,
-                  fontWeight: '600',
-                  marginTop: 3,
-                  textAlign: 'center',
-                }}>
-                For Sale
-              </Text>
+              <Text style={styles.proposeCardText}>For Sale</Text>
             </PerposeCard>
 
             <PerposeCard
               onPress={() => navigation.navigate('UserForRentScreen')}
-              Bg="#D3E2FF"
-              Img={Image97}
+              Bg="#F3F3F3"
+              Img={ForRentIcon}
               name="For Rent"
               textColor="#246BFD">
-              <Text
-                style={{
-                  fontSize: 15,
-                  color: '#246BFD',
-                  lineHeight: 21,
-                  fontWeight: '600',
-                  marginTop: 3,
-                  textAlign: 'center',
-                }}>
-                For Rent
-              </Text>
+              <Text style={styles.proposeCardText}>For Rent</Text>
             </PerposeCard>
 
             <PerposeCard
               onPress={() => {}}
-              Bg="#FFEFC7"
-              Img={Image98}
+              Bg="#F3F3F3"
+              Img={ForRequestIcon}
               name="Request"
               textColor="#FFBE1D">
-              <Text
-                style={{
-                  fontSize: 15,
-                  color: '#FFBE1D',
-                  lineHeight: 21,
-                  fontWeight: '600',
-                  marginTop: 3,
-                  textAlign: 'center',
-                }}>
-                Request
-              </Text>
+              <Text style={styles.proposeCardText}>Request</Text>
             </PerposeCard>
             <PerposeCard
               onPress={() => {}}
-              Bg="#FFE6E2"
-              Img={Image99}
+              Bg="#F3F3F3"
+              Img={CreateGroupIcon}
               name="Create Group"
               textColor="#E56D5C">
-              <Text
-                style={{
-                  fontSize: 15,
-                  color: '#E56D5C',
-                  lineHeight: 21,
-                  fontWeight: '600',
-                  marginTop: 3,
-                  textAlign: 'center',
-                }}>
-                Create {'\n'} Group
-              </Text>
+              <Text style={styles.proposeCardText}>Create {'\n'} Group</Text>
             </PerposeCard>
           </View>
 
@@ -164,7 +128,9 @@ const UserHomeScreen = () => {
                 alignItems: 'center',
                 justifyContent: 'space-between',
               }}>
-              <Text style={styles.benefitsText}>Benefits</Text>
+              <TouchableOpacity>
+                <Text style={styles.benefitsText}>Benefits</Text>
+              </TouchableOpacity>
               {/* <TouchableOpacity>
                 <Text style={styles.seeAll}>See All</Text>
               </TouchableOpacity> */}
@@ -236,7 +202,9 @@ const UserHomeScreen = () => {
                 alignItems: 'center',
                 justifyContent: 'space-between',
               }}>
-              <Text style={styles.benefitsText}>News</Text>
+              <TouchableOpacity>
+                <Text style={styles.benefitsText}>News</Text>
+              </TouchableOpacity>
             </View>
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>

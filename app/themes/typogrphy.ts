@@ -17,3 +17,4 @@ export const Font_SEMIBOLD = 'Urbanist-SemiBold';
 export const Font_SEMIBOLDITALIC = 'Urbanist-SemiBoldItalic';
 export const Font_THIN = 'Urbanist-Thin';
 export const Font_THINITALIC = 'Urbanist-ThinItalic';
+export const Font_SURANNA = 'Suranna-Regular';

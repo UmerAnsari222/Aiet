@@ -74,6 +74,13 @@ import AdditionalIcons from './AdditionalIcons.svg';
 import Emoji from './emoji.svg';
 import AutoLayoutHorizontal from './AutoLayoutHorizontal.svg';
 import Unsplash from './unsplash_pAtA8xe_iVM.png';
+import ForRentIcon from './forRentIcon.svg';
+import ForSaleIcon from './forSaleIcon.svg';
+import ForRequestIcon from './forRequestIcon.svg';
+import CreateGroupIcon from './createGroupIcon.svg';
+import CircleMore from './circleMore.svg';
+import Alex from './alex.png';
+import AutoLayoutHorizontalOrang from './AutoLayoutHorizontalOrang.svg';
 
 export {
   Logo,
@@ -152,4 +159,11 @@ export {
   CameraOrang,
   AutoLayoutHorizontal,
   Unsplash,
+  ForRentIcon,
+  ForSaleIcon,
+  ForRequestIcon,
+  CreateGroupIcon,
+  CircleMore,
+  Alex,
+  AutoLayoutHorizontalOrang,
 };
