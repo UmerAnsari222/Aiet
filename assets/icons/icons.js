@@ -81,6 +81,9 @@ import CreateGroupIcon from './createGroupIcon.svg';
 import CircleMore from './circleMore.svg';
 import Alex from './alex.png';
 import AutoLayoutHorizontalOrang from './AutoLayoutHorizontalOrang.svg';
+import SettingBlack from './settingBlack.svg';
+import Adds from './adds.svg';
+import HeadphoneMic from './headphoneMic.svg';
 
 export {
   Logo,
@@ -166,4 +169,7 @@ export {
   CircleMore,
   Alex,
   AutoLayoutHorizontalOrang,
+  SettingBlack,
+  Adds,
+  HeadphoneMic,
 };

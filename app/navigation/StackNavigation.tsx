@@ -31,6 +31,13 @@ import PropertyDetailScreen from '../screens/PropertyDetailScreen/PropertyDetail
 import OwnerDetailScreen from '../screens/OwnerDetailScreen';
 import ChatScreen from '../screens/ChatScreen';
 import ClientChatScreen from '../screens/User/ChatsScreen/ClientChatScreen';
+import UserSettingScreen from '../screens/User/UserProfileScreen/UserSettingScreen';
+import UserEditProfileScreen from '../screens/User/UserProfileScreen/UserEditProfileScreen';
+import UserChangePasswordScreen from '../screens/User/UserProfileScreen/UserChangePasswordScreen';
+import UserFaqScreen from '../screens/User/UserProfileScreen/UserFaqScreen';
+import UserAboutUsScreen from '../screens/User/UserProfileScreen/UserAboutUsScreen';
+import HelpScreen from '../screens/User/UserProfileScreen/HelpScreen';
+import UserContactUsScreen from '../screens/User/UserProfileScreen/UserContactUsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -122,6 +129,22 @@ const StackNavigation = () => {
         <Stack.Screen name="OwnerDetailScreen" component={OwnerDetailScreen} />
         <Stack.Screen name="ChatScreen" component={ChatScreen} />
         <Stack.Screen name="ClientChatScreen" component={ClientChatScreen} />
+        <Stack.Screen name="UserSettingScreen" component={UserSettingScreen} />
+        <Stack.Screen
+          name="UserEditProfileScreen"
+          component={UserEditProfileScreen}
+        />
+        <Stack.Screen
+          name="UserChangePasswordScreen"
+          component={UserChangePasswordScreen}
+        />
+        <Stack.Screen name="UserFaqScreen" component={UserFaqScreen} />
+        <Stack.Screen name="UserAboutUsScreen" component={UserAboutUsScreen} />
+        <Stack.Screen name="HelpScreen" component={HelpScreen} />
+        <Stack.Screen
+          name="UserContactUsScreen"
+          component={UserContactUsScreen}
+        />
       </Stack.Group>
 
       <Stack.Group>
