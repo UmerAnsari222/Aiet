@@ -9,13 +9,13 @@ const ChooseCompanyScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <ScrollView
         contentContainerStyle={{paddingVertical: 20}}
         showsVerticalScrollIndicator={false}>
-        <View style={styles.imageContainer}>
+        {/* <View style={styles.imageContainer}>
           <Image source={SmLogo} />
-        </View>
+        </View> */}
 
         <View style={styles.buttonWrapper}>
           <ChooseCompanyButton onPress={() => {}}>

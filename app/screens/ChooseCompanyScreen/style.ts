@@ -3,7 +3,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import {Font_REGULAR} from '../../themes/typogrphy';
+import {Font_BOLD, Font_REGULAR} from '../../themes/typogrphy';
 
 export const styles = StyleSheet.create({
   imageContainer: {
@@ -13,13 +13,16 @@ export const styles = StyleSheet.create({
   },
   buttonWrapper: {
     paddingHorizontal: wp('10'),
-    gap: wp('5'),
+    gap: wp('10'),
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: hp('10'),
   },
   buttonText: {
-    color: '#E3851E',
-    fontFamily: Font_REGULAR,
+    color: '#FFF',
+    fontFamily: Font_BOLD,
     fontWeight: '600',
-    fontSize: 20,
+    fontSize: 24,
     lineHeight: 28,
   },
 });

@@ -1,4 +1,4 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {View, Text, Image, TouchableOpacity, Platform} from 'react-native';
 import React, {MutableRefObject, ReactElement, useEffect, useRef} from 'react';
 import {
   Bar,

@@ -84,6 +84,8 @@ import AutoLayoutHorizontalOrang from './AutoLayoutHorizontalOrang.svg';
 import SettingBlack from './settingBlack.svg';
 import Adds from './adds.svg';
 import HeadphoneMic from './headphoneMic.svg';
+import Title from './Title.svg';
+import TitlePng from './Title.png';
 
 export {
   Logo,
@@ -172,4 +174,6 @@ export {
   SettingBlack,
   Adds,
   HeadphoneMic,
+  Title,
+  TitlePng,
 };

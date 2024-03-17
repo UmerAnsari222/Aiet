@@ -1,4 +1,4 @@
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, Platform} from 'react-native';
 import React from 'react';
 import {
   heightPercentageToDP,
@@ -51,6 +51,18 @@ const styles = StyleSheet.create({
     paddingVertical: heightPercentageToDP('2'),
     marginVertical: heightPercentageToDP('2'),
     marginRight: heightPercentageToDP('2'),
+    marginLeft: heightPercentageToDP('0.5'),
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000000',
+        shadowOffset: {width: 1, height: 1},
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+      },
+      android: {
+        elevation: 4,
+      },
+    }),
   },
 });
 

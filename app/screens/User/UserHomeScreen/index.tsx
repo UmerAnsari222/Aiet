@@ -5,20 +5,14 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
+  Platform,
 } from 'react-native';
 import React from 'react';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
-import {
-  Font_BLACK,
-  Font_BOLD,
-  Font_MEDIUM,
-  Font_REGULAR,
-  Font_SEMIBOLD,
-  Font_THIN,
-} from '../../../themes/typogrphy';
+import {Font_BOLD} from '../../../themes/typogrphy';
 import {styles} from './style';
 import {
   CreateGroupIcon,
@@ -33,10 +27,13 @@ import {
   Image98,
   Image99,
   Notification1,
+  Title,
+  TitlePng,
 } from '../../../../assets/icons/icons';
 import PerposeCard from '../../../components/PerposeCard';
 import NewsCard from '../../../components/NewsCard';
 import {useNavigation} from '@react-navigation/native';
+// import DropShadow from 'react-native-drop-shadow';
 
 const UserHomeScreen = () => {
   const navigation = useNavigation();
@@ -57,9 +54,20 @@ const UserHomeScreen = () => {
               <View
                 style={{flexDirection: 'row', alignItems: 'center', gap: 5}}>
                 {/* <Text style={styles.greeting}>Hey,</Text> */}
-                <Text style={[styles.greeting, {color: '#E3851E'}]}>
+                {/* <DropShadow
+                  style={{
+                    shadowColor: '#7C4002',
+                    shadowOffset: {width: 2, height: 1},
+                    shadowOpacity: 0.8,
+                    shadowRadius: 1.4,
+                  }}> */}
+                {/* <Text style={[styles.greeting, {color: '#E3851E'}]}>
                   AIET.NO
-                </Text>
+                </Text> */}
+                {/* </DropShadow> */}
+                <Title />
+
+                {/* <Image source={TitlePng} /> */}
               </View>
               <View style={{flexDirection: 'row', gap: 5}}>
                 <TouchableOpacity
@@ -136,7 +144,24 @@ const UserHomeScreen = () => {
               </TouchableOpacity> */}
             </View>
 
-            <View style={styles.boxWrapper}>
+            <View
+              style={[
+                styles.boxWrapper,
+                {
+                  backgroundColor: '#FFF',
+                  ...Platform.select({
+                    ios: {
+                      shadowColor: '#222222',
+                      shadowOffset: {width: 1, height: 1},
+                      shadowOpacity: 0.3,
+                      shadowRadius: 4.8,
+                    },
+                    android: {
+                      elevation: 4.8,
+                    },
+                  }),
+                },
+              ]}>
               <View style={{flexDirection: 'row', gap: 7}}>
                 <View>
                   <Image source={Image6} />
