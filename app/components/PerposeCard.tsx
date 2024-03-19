@@ -33,8 +33,10 @@ const PerposeCard: FC<PerposeCardProps> = ({
       onPress={onPress}
       style={{
         backgroundColor: Bg,
-        height: heightPercentageToDP('15'),
+        height: heightPercentageToDP('11.7'),
+        // height: 84,
         width: widthPercentageToDP('27'),
+        // width: 97,
         borderRadius: 10,
         alignItems: 'center',
         justifyContent: 'center',

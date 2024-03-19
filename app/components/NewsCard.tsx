@@ -45,7 +45,7 @@ const NewsCard = () => {
 
 const styles = StyleSheet.create({
   boxWrapper: {
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#FFF',
     borderRadius: 13,
     paddingHorizontal: widthPercentageToDP('4'),
     paddingVertical: heightPercentageToDP('2'),

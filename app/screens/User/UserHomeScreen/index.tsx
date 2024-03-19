@@ -95,7 +95,7 @@ const UserHomeScreen = () => {
             }}>
             <PerposeCard
               onPress={() => navigation.navigate('UserForSaleScreen')}
-              Bg="#F3F3F3"
+              Bg="#FFF3E5"
               Img={ForSaleIcon}
               name="For Sale"
               textColor="#E3851E">
@@ -104,27 +104,27 @@ const UserHomeScreen = () => {
 
             <PerposeCard
               onPress={() => navigation.navigate('UserForRentScreen')}
-              Bg="#F3F3F3"
+              Bg="#FFF3E5"
               Img={ForRentIcon}
               name="For Rent"
-              textColor="#246BFD">
+              textColor="#E3851E">
               <Text style={styles.proposeCardText}>For Rent</Text>
             </PerposeCard>
 
             <PerposeCard
               onPress={() => {}}
-              Bg="#F3F3F3"
+              Bg="#FFF3E5"
               Img={ForRequestIcon}
               name="Request"
-              textColor="#FFBE1D">
+              textColor="#E3851E">
               <Text style={styles.proposeCardText}>Request</Text>
             </PerposeCard>
             <PerposeCard
               onPress={() => {}}
-              Bg="#F3F3F3"
+              Bg="#FFF3E5"
               Img={CreateGroupIcon}
               name="Create Group"
-              textColor="#E56D5C">
+              textColor="#E3851E">
               <Text style={styles.proposeCardText}>Create {'\n'} Group</Text>
             </PerposeCard>
           </View>

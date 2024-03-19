@@ -85,10 +85,11 @@ export const styles = StyleSheet.create({
   },
   proposeCardText: {
     fontSize: 15,
-    color: '#000000',
+    color: '#E3851E',
     lineHeight: 21,
     fontWeight: '600',
     marginTop: 3,
     textAlign: 'center',
+    fontFamily: Font_REGULAR,
   },
 });

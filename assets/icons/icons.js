@@ -87,6 +87,12 @@ import HeadphoneMic from './headphoneMic.svg';
 import Title from './Title.svg';
 import TitlePng from './Title.png';
 
+import ForRentIconOrang from './ForRentIconOrang.svg';
+import ForSaleIconOrang from './ForSaleIconOrang.svg';
+import ForRequestIconOrang from './ForRequestIconOrang.svg';
+import CreateGroupIconOrang from './CreateGroupIconOrang.svg';
+import AddButton from './AddButton.svg';
+
 export {
   Logo,
   BrownLogo,
@@ -176,4 +182,13 @@ export {
   HeadphoneMic,
   Title,
   TitlePng,
+  ForRentIconOrang,
+  ForRequestIconOrang,
+  ForSaleIconOrang,
+  CreateGroupIconOrang,
+  AddButton,
 };
+// CreateGroupIcon,
+// ForRentIcon,
+// ForRequestIcon,
+// ForSaleIcon,

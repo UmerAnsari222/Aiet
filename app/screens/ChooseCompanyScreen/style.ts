@@ -13,10 +13,10 @@ export const styles = StyleSheet.create({
   },
   buttonWrapper: {
     paddingHorizontal: wp('10'),
-    gap: wp('10'),
+    gap: wp('12'),
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: hp('10'),
+    marginTop: hp('14'),
   },
   buttonText: {
     color: '#FFF',
