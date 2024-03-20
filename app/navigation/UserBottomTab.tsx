@@ -21,6 +21,7 @@ import Working from '../components/Working';
 import UserChatsScreen from '../screens/User/ChatsScreen';
 import UserProfileScreen from '../screens/User/UserProfileScreen';
 import UserCalenderScreen from '../screens/User/UserCalenderScreen';
+import CreateAddScreen from '../screens/User/CreateAddScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -98,7 +99,7 @@ export default function UserBottomTab() {
           },
         }}
         name="UserCreateAddScreen"
-        component={Working}
+        component={CreateAddScreen}
       />
       <Tab.Screen
         options={{

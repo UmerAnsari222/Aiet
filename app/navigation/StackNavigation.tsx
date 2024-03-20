@@ -38,6 +38,18 @@ import UserFaqScreen from '../screens/User/UserProfileScreen/UserFaqScreen';
 import UserAboutUsScreen from '../screens/User/UserProfileScreen/UserAboutUsScreen';
 import HelpScreen from '../screens/User/UserProfileScreen/HelpScreen';
 import UserContactUsScreen from '../screens/User/UserProfileScreen/UserContactUsScreen';
+import AddTaskScreen from '../screens/User/UserCalenderScreen/AddTaskScreen';
+import CreateAddForRentScreen from '../screens/User/CreateAddScreen/CreateAddForRentScreen';
+import UploadImageForRentAddScreen from '../screens/User/CreateAddScreen/CreateAddForRentScreen/UploadImageForRentAddScreen';
+import DataForRentAddScreen from '../screens/User/CreateAddScreen/CreateAddForRentScreen/DataForRentAddScreen';
+import ForRentReviewAdScreen from '../screens/User/CreateAddScreen/CreateAddForRentScreen/ForRentReviewAdScreen';
+import ForRentAddPublishScreen from '../screens/User/CreateAddScreen/CreateAddForRentScreen/ForRentAddPublishScreen';
+import SuccessfullyScreen from '../screens/SuccessfullyScreen';
+import CreateAddForSaleScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen';
+import UploadImageForSaleAddScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen/UploadImageForSaleAddScreen';
+import DataForSaleAddScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen/DataForSaleAddScreen';
+import ForSaleReviewAdScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen/ForSaleReviewAdScreen';
+import ForSaleAddPublishScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen/ForSaleAddPublishScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -144,6 +156,51 @@ const StackNavigation = () => {
         <Stack.Screen
           name="UserContactUsScreen"
           component={UserContactUsScreen}
+        />
+        <Stack.Screen name="AddTaskScreen" component={AddTaskScreen} />
+        <Stack.Screen
+          name="CreateAddForRentScreen"
+          component={CreateAddForRentScreen}
+        />
+        <Stack.Screen
+          name="UploadImageForRentAddScreen"
+          component={UploadImageForRentAddScreen}
+        />
+        <Stack.Screen
+          name="DataForRentAddScreen"
+          component={DataForRentAddScreen}
+        />
+        <Stack.Screen
+          name="ForRentReviewAdScreen"
+          component={ForRentReviewAdScreen}
+        />
+        <Stack.Screen
+          name="ForRentAddPublishScreen"
+          component={ForRentAddPublishScreen}
+        />
+        <Stack.Screen
+          name="CreateAddForSaleScreen"
+          component={CreateAddForSaleScreen}
+        />
+        <Stack.Screen
+          name="UploadImageForSaleAddScreen"
+          component={UploadImageForSaleAddScreen}
+        />
+        <Stack.Screen
+          name="DataForSaleAddScreen"
+          component={DataForSaleAddScreen}
+        />
+        <Stack.Screen
+          name="ForSaleReviewAdScreen"
+          component={ForSaleReviewAdScreen}
+        />
+        <Stack.Screen
+          name="ForSaleAddPublishScreen"
+          component={ForSaleAddPublishScreen}
+        />
+        <Stack.Screen
+          name="SuccessfullyScreen"
+          component={SuccessfullyScreen}
         />
       </Stack.Group>
 

@@ -92,6 +92,14 @@ import ForSaleIconOrang from './ForSaleIconOrang.svg';
 import ForRequestIconOrang from './ForRequestIconOrang.svg';
 import CreateGroupIconOrang from './CreateGroupIconOrang.svg';
 import AddButton from './AddButton.svg';
+import AddRent from './AddRent.png';
+import AddSale from './AddSale.png';
+import AddRequest from './AddRequest.png';
+import SelectImage from './selectImage.svg';
+import PlusIcon from './plus.svg';
+import MaterialSymbolsMap from './material-symbols_map.svg';
+import Speeker from './speeker.svg';
+import SuccessfulIlustration from './SuccessfulIlustration.svg';
 
 export {
   Logo,
@@ -187,6 +195,14 @@ export {
   ForSaleIconOrang,
   CreateGroupIconOrang,
   AddButton,
+  AddRent,
+  AddRequest,
+  AddSale,
+  SelectImage,
+  PlusIcon,
+  MaterialSymbolsMap,
+  Speeker,
+  SuccessfulIlustration,
 };
 // CreateGroupIcon,
 // ForRentIcon,

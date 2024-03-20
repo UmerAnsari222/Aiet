@@ -14,9 +14,11 @@ import {
 } from 'react-native-responsive-screen';
 import {Calendar, LocaleConfig} from 'react-native-calendars';
 import TaskCard from '../../../components/TaskCard';
+import {useNavigation} from '@react-navigation/native';
 
 export default function UserCalenderScreen() {
   const [selected, setSelected] = useState('');
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -45,7 +47,8 @@ export default function UserCalenderScreen() {
                 Calendar
               </Text>
             </View>
-            <TouchableOpacity onPress={() => {}}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('AddTaskScreen')}>
               <AddButton />
             </TouchableOpacity>
           </View>
@@ -73,7 +76,8 @@ export default function UserCalenderScreen() {
               hideArrows={true}
               theme={{
                 dayTextColor: '#000',
-                todayTextColor: '#000',
+                todayTextColor: '#FFFFFF',
+                todayBackgroundColor: '#B43DB7',
               }}
             />
           </View>
