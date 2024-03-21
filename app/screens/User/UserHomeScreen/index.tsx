@@ -16,9 +16,13 @@ import {Font_BOLD} from '../../../themes/typogrphy';
 import {styles} from './style';
 import {
   CreateGroupIcon,
+  ForCreateGroupOrange,
   ForRentIcon,
+  ForRentOrange,
   ForRequestIcon,
+  ForRequestOrange,
   ForSaleIcon,
+  ForSaleOrange,
   HeartRead,
   Image6,
   Image7,
@@ -96,7 +100,7 @@ const UserHomeScreen = () => {
             <PerposeCard
               onPress={() => navigation.navigate('UserForSaleScreen')}
               Bg="#FFF3E5"
-              Img={ForSaleIcon}
+              Img={ForSaleOrange}
               name="For Sale"
               textColor="#E3851E">
               <Text style={styles.proposeCardText}>For Sale</Text>
@@ -105,7 +109,7 @@ const UserHomeScreen = () => {
             <PerposeCard
               onPress={() => navigation.navigate('UserForRentScreen')}
               Bg="#FFF3E5"
-              Img={ForRentIcon}
+              Img={ForRentOrange}
               name="For Rent"
               textColor="#E3851E">
               <Text style={styles.proposeCardText}>For Rent</Text>
@@ -114,15 +118,15 @@ const UserHomeScreen = () => {
             <PerposeCard
               onPress={() => {}}
               Bg="#FFF3E5"
-              Img={ForRequestIcon}
+              Img={ForRequestOrange}
               name="Request"
               textColor="#E3851E">
               <Text style={styles.proposeCardText}>Request</Text>
             </PerposeCard>
             <PerposeCard
-              onPress={() => {}}
+              onPress={() => navigation.navigate('UserNewGroupScreen')}
               Bg="#FFF3E5"
-              Img={CreateGroupIcon}
+              Img={ForCreateGroupOrange}
               name="Create Group"
               textColor="#E3851E">
               <Text style={styles.proposeCardText}>Create {'\n'} Group</Text>

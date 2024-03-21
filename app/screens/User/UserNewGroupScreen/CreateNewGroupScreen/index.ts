@@ -1,0 +1,86 @@
+import {StyleSheet} from 'react-native';
+import {
+  heightPercentageToDP,
+  widthPercentageToDP,
+} from 'react-native-responsive-screen';
+import {Font_BOLD, Font_REGULAR} from '../../../../themes/typogrphy';
+
+export const styles = StyleSheet.create({
+  signInText: {
+    color: '#fff',
+    textAlign: 'center',
+    fontSize: 16,
+    fontFamily: Font_BOLD,
+    fontWeight: '700',
+    lineHeight: 22,
+  },
+  inputWrapper: {
+    backgroundColor: '#F5F5F5',
+    borderRadius: 10,
+    paddingVertical: heightPercentageToDP('0.3'),
+    paddingHorizontal: heightPercentageToDP('2'),
+    flexDirection: 'row',
+    alignItems: 'center',
+    // marginVertical: heightPercentageToDP('1.2'),
+    marginVertical: heightPercentageToDP('1.2'),
+    flex: 1,
+  },
+  label: {
+    fontSize: 14,
+    fontWeight: '500',
+    fontFamily: Font_REGULAR,
+    lineHeight: 18,
+    color: '#000',
+    marginBottom: 1,
+    paddingHorizontal: 4,
+  },
+  filtersButton: {
+    height: heightPercentageToDP('7'),
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 4,
+    paddingHorizontal: widthPercentageToDP('5'),
+  },
+  uploadImageText: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#000000D9',
+    fontFamily: Font_REGULAR,
+    flex: 1,
+    lineHeight: 24,
+  },
+  uploadImageWapper: {
+    backgroundColor: '#F5F5F5',
+    height: 160,
+    borderRadius: 15,
+    borderColor: '#C0C0C0',
+    borderWidth: 1.2,
+    borderStyle: 'dashed',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    marginVertical: heightPercentageToDP('2'),
+    paddingVertical: heightPercentageToDP('2'),
+  },
+  uploadButton: {
+    backgroundColor: '#D07D36',
+    paddingHorizontal: widthPercentageToDP('4'),
+    paddingVertical: heightPercentageToDP('1'),
+    borderRadius: 5,
+  },
+  uploadImageMinimText10: {
+    color: '#555555',
+    fontSize: 12,
+    fontWeight: '600',
+    lineHeight: 34,
+    fontFamily: Font_REGULAR,
+  },
+  uploadImageMinimText: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#676666',
+    fontFamily: Font_REGULAR,
+    flex: 1,
+    lineHeight: 16,
+    marginTop: 2,
+  },
+});

@@ -50,6 +50,13 @@ import UploadImageForSaleAddScreen from '../screens/User/CreateAddScreen/CreateA
 import DataForSaleAddScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen/DataForSaleAddScreen';
 import ForSaleReviewAdScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen/ForSaleReviewAdScreen';
 import ForSaleAddPublishScreen from '../screens/User/CreateAddScreen/CreateAddForSaleScreen/ForSaleAddPublishScreen';
+import UserNewGroupScreen from '../screens/User/UserNewGroupScreen';
+import UserCreateNewGroupScreen from '../screens/User/UserNewGroupScreen/CreateNewGroupScreen/UserCreateNewGroupScreen';
+import HousingAssociationGroupScreen from '../screens/User/UserNewGroupScreen/HousingAssociationGroupScreen';
+import GroupSubmitComplaintScreen from '../screens/User/UserNewGroupScreen/GroupSubmitComplaintScreen';
+import UsersContactScreen from '../screens/User/UserNewGroupScreen/UsersContactScreen';
+import UserMessangerScreen from '../screens/User/UserNewGroupScreen/UserMessangerScreen';
+import MyAdScreen from '../screens/User/MyAdScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -198,6 +205,31 @@ const StackNavigation = () => {
           name="ForSaleAddPublishScreen"
           component={ForSaleAddPublishScreen}
         />
+        <Stack.Screen
+          name="UserNewGroupScreen"
+          component={UserNewGroupScreen}
+        />
+        <Stack.Screen
+          name="UserCreateNewGroupScreen"
+          component={UserCreateNewGroupScreen}
+        />
+        <Stack.Screen
+          name="HousingAssociationGroupScreen"
+          component={HousingAssociationGroupScreen}
+        />
+        <Stack.Screen
+          name="GroupSubmitComplaintScreen"
+          component={GroupSubmitComplaintScreen}
+        />
+        <Stack.Screen
+          name="UsersContactScreen"
+          component={UsersContactScreen}
+        />
+        <Stack.Screen
+          name="UserMessangerScreen"
+          component={UserMessangerScreen}
+        />
+        <Stack.Screen name="MyAdScreen" component={MyAdScreen} />
         <Stack.Screen
           name="SuccessfullyScreen"
           component={SuccessfullyScreen}

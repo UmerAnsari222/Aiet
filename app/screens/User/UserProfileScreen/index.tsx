@@ -116,18 +116,21 @@ const UserProfileScreen = () => {
             </View>
 
             <View style={{flexDirection: 'row', gap: 20}}>
-              <View style={[styles.smBoxWrapper, {gap: 10}]}>
-                <Adds />
-                <Text
-                  style={{
-                    color: '#000000',
-                    fontWeight: '600',
-                    fontSize: 16,
-                    lineHeight: 19.2,
-                  }}>
-                  My Ads
-                </Text>
-              </View>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('MyAdScreen')}>
+                <View style={[styles.smBoxWrapper, {gap: 10}]}>
+                  <Adds />
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontWeight: '600',
+                      fontSize: 16,
+                      lineHeight: 19.2,
+                    }}>
+                    My Ads
+                  </Text>
+                </View>
+              </TouchableOpacity>
               <View style={styles.smBoxWrapper}>
                 <View style={{flexDirection: 'row', gap: 4}}>
                   <LgStar />

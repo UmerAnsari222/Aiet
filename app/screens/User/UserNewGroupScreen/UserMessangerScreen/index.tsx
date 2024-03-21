@@ -20,21 +20,22 @@ import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
+
+import {useNavigation} from '@react-navigation/native';
+
+import Video from 'react-native-video';
 import {
   AdditionalIcons,
   AutoLayoutHorizontal,
   CameraOrang,
   Emoji,
   LeftArrow,
-  SendIcon,
+  PlusIcon,
   Unsplash,
-} from '../../../assets/icons/icons';
-import {Font_REGULAR} from '../../themes/typogrphy';
-import {useNavigation} from '@react-navigation/native';
+} from '../../../../../assets/icons/icons';
+import {Font_REGULAR} from '../../../../themes/typogrphy';
 
-import Video from 'react-native-video';
-
-const ChatScreen = () => {
+const UserMessangerScreen = () => {
   const [messages, setMessages] = useState([]);
   const [text, setText] = useState('');
 
@@ -86,27 +87,30 @@ const ChatScreen = () => {
     return (
       <View style={styles.inputContainer}>
         <View style={styles.inputWrapper}>
-          <Emoji />
           <TextInput
             placeholder="Type a message..."
+            placeholderTextColor={'#E3851E'}
             style={styles.textInput}
             multiline
             autoFocus
             value={props.text}
             onChangeText={props.onTextChanged}
           />
-          <View style={{flexDirection: 'row', alignItems: 'center', gap: 4}}>
-            <TouchableOpacity>
-              <AdditionalIcons />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <CameraOrang />
-            </TouchableOpacity>
-          </View>
         </View>
-        <TouchableOpacity onPress={() => handelSend(props)}>
-          <AutoLayoutHorizontal />
-        </TouchableOpacity>
+        <View
+          style={{
+            width: 50,
+            height: 50,
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <TouchableOpacity onPress={() => handelSend(props)}>
+            {/* <PlusIcon /> */}
+            <Text style={{fontSize: 24, fontWeight: '700', color: '#000'}}>
+              +
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   };
@@ -130,7 +134,12 @@ const ChatScreen = () => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1, paddingVertical: heightPercentageToDP('2')}}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        paddingVertical: heightPercentageToDP('2'),
+        backgroundColor: '#FFF',
+      }}>
       <View
         style={{
           flexDirection: 'row',
@@ -138,21 +147,34 @@ const ChatScreen = () => {
           gap: 10,
           paddingHorizontal: widthPercentageToDP('4'),
         }}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
-          <LeftArrow />
-        </TouchableOpacity>
-        <View>
-          <Image source={Unsplash} />
-        </View>
-        <Text
+        <View
           style={{
-            fontSize: 16,
-            fontWeight: '600',
-            color: '#000000D9',
-            fontFamily: Font_REGULAR,
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 10,
+            flex: 1,
           }}>
-          Alex Hales
-        </Text>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <LeftArrow />
+          </TouchableOpacity>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <Image
+              style={{width: 23, height: 23, objectFit: 'cover'}}
+              source={Unsplash}
+            />
+            <Image
+              style={{width: 23, height: 23, objectFit: 'cover'}}
+              source={Unsplash}
+            />
+            <Image
+              style={{width: 23, height: 23, objectFit: 'cover'}}
+              source={Unsplash}
+            />
+          </View>
+        </View>
+        <TouchableOpacity style={styles.addButton}>
+          <PlusIcon />
+        </TouchableOpacity>
       </View>
 
       <GiftedChat
@@ -165,11 +187,11 @@ const ChatScreen = () => {
             {...props}
             wrapperStyle={{
               left: {
-                backgroundColor: '#E9E9E9E5',
+                backgroundColor: '#FFF5E9',
                 marginBottom: heightPercentageToDP('1.4'),
               },
               right: {
-                backgroundColor: '#B86015',
+                backgroundColor: '#E3851E',
                 marginBottom: heightPercentageToDP('1'),
               },
             }}
@@ -185,6 +207,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     paddingHorizontal: 10,
     gap: 4,
     position: 'absolute',
@@ -194,17 +217,25 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 12,
     fontSize: 16,
-    color: '#FFF',
+    color: '#E3851E',
   },
   inputWrapper: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#1B1B1B',
+    backgroundColor: '#FFF5E9',
     paddingHorizontal: 10,
     borderRadius: 15,
     height: heightPercentageToDP('8'),
   },
+  addButton: {
+    backgroundColor: '#F5F5F5',
+    width: 64,
+    height: 33,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
 
-export default ChatScreen;
+export default UserMessangerScreen;

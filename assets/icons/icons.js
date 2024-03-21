@@ -100,6 +100,10 @@ import PlusIcon from './plus.svg';
 import MaterialSymbolsMap from './material-symbols_map.svg';
 import Speeker from './speeker.svg';
 import SuccessfulIlustration from './SuccessfulIlustration.svg';
+import ForSaleOrange from './ForSaleOrange.png';
+import ForRentOrange from './ForRentOrange.png';
+import ForRequestOrange from './ForRequestOrange.png';
+import ForCreateGroupOrange from './ForCreateGroupOrange.png';
 
 export {
   Logo,
@@ -203,6 +207,10 @@ export {
   MaterialSymbolsMap,
   Speeker,
   SuccessfulIlustration,
+  ForSaleOrange,
+  ForRentOrange,
+  ForRequestOrange,
+  ForCreateGroupOrange,
 };
 // CreateGroupIcon,
 // ForRentIcon,

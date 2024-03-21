@@ -41,8 +41,8 @@ const PerposeCard: FC<PerposeCardProps> = ({
         alignItems: 'center',
         justifyContent: 'center',
       }}>
-      {/* <Image source={Img} /> */}
-      <Img />
+      <Image style={{width: 30, height: 30}} source={Img} />
+      {/* <Img /> */}
       {children}
     </TouchableOpacity>
   );
